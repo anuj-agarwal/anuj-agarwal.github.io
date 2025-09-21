@@ -23,4 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // Apply fade-in to all main content blocks
+  const fadeElements = document.querySelectorAll("main, .timeline, .contact-grid, div");
+  fadeElements.forEach(el => {
+    el.classList.add("fade-in");
+  });
 });
