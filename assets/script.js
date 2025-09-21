@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active-collapsible");
 
-      // Get the next sibling element (skip text nodes)
-      let content = this.nextSibling;
-      while (content && content.nodeType !== 1) {
-        content = content.nextSibling;
-      }
+      // Use nextElementSibling (skip all text nodes)
+      const content = this.nextElementSibling;
       if (!content) return;
 
       // Use requestAnimationFrame to ensure correct scrollHeight
@@ -26,11 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.paddingBottom = "0";
       } else {
         // Expand
-        requestAnimationFrame(() => {
-          content.style.maxHeight = content.scrollHeight + "px";
-          content.style.paddingTop = "0.5rem";
-          content.style.paddingBottom = "0.5rem";
-        });
+        content.style.display = "block"; // ensure visible
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.paddingTop = "0.5rem";
+        content.style.paddingBottom = "0.5rem";
       }
     });
   }
