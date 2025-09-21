@@ -7,7 +7,7 @@ permalink: /skills/
   <h2>AI / ML Expertise</h2>
   <ul>
     <li>Generative AI & LLMs: Built LangChain-based AI agents for finance audits and productivity tools.</li>
-    <li>NLP & Semantic Analysis: Used for PDF extraction and similarity models in projects like <a class="internal-link" href="/projects/">Algonox pipelines</a>.</li>
+    <li>NLP & Semantic Analysis: Used for PDF extraction and similarity models in various projects.</li>
     <li>Computer Vision: YOLO-based detection in healthcare diagnostics.</li>
     <li>Prompt Engineering & Agent Design: Multi-step AI agent workflows in enterprise environments.</li>
     <li>RAG & Vector Databases: Retrieval-augmented generation for document understanding.</li>
