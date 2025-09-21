@@ -23,7 +23,7 @@ permalink: /contact/
   <a href="tel:+919999999999" class="box" style="min-width: 180px; text-align: center;">
     📞<br>
     <strong>Phone</strong><br>
-    +91-99999-99999
+    +91-94018 83416
   </a>
 
   <!-- LinkedIn -->
