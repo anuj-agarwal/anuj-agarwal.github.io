@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 permalink: /
 ---
-<div style="margin-left: 12%; max-width: 800px;">
+<div style="margin-left: 12%; max-width: 800px;" class="fade-in">
   <h1>👋 Hi, I'm Anuj Agarwal</h1>
   <p style="font-size:1.2rem;">Generative AI & Machine Learning Leader with a passion for building impactful, scalable AI solutions.</p>
   <p style="font-size:1rem;">Welcome to my portfolio! Here, you can explore my expertise, projects, research, and thought leadership across Finance, Healthcare, and Cybersecurity domains.</p>
