@@ -1,205 +1,133 @@
-/* General Layout */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  flex-direction: column;
-  background: #fff5f5;
-  color: #2d1b1b;
-}
-
-.wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-
-/* Header */
-header {
-  background: #f28b82; 
-  padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  color: #fffdfd;
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, border-bottom 0.3s;
-}
-
-nav a:hover {
-  color: #ffe082;
-}
-
-nav a.active {
-  border-bottom: 3px solid #ffe082;
-  padding-bottom: 3px;
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: #d84315;
-}
-
-/* Box Cards for Projects, Experience, Achievements, Contact */
-.box, .timeline-card, .achievements-card {
-  background: #ffffff;
-  border: 2px solid #f28b82;
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.box:hover, .timeline-card:hover, .achievements-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  background: #fff0f0;
-}
-
-/* Timeline */
-.timeline, .achievements-timeline {
-  position: relative;
-  margin: 2rem 0;
-  padding-left: 60px;
-}
-
-.timeline::before, .achievements-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 30px;
-  width: 4px;
-  height: 100%;
-  background: #f28b82;
-}
-
-.timeline-entry, .achievements-entry {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.timeline-dot, .achievements-dot {
-  width: 16px;
-  height: 16px;
-  background: #ffe082;
-  border: 3px solid #f28b82;
-  border-radius: 50%;
-  position: absolute;
-  left: 22px;
-  top: 0;
-}
-
-/* Collapsible Buttons */
-.collapsible {
-  background-color: #fff0f0;
-  color: #2d1b1b;
-  cursor: pointer;
-  padding: 12px;
-  width: 100%;
-  border: 2px solid #f28b82;
-  border-radius: 8px;
-  text-align: left;
-  outline: none;
-  font-size: 1.1rem;
-  transition: background 0.2s;
-  margin-top: 0.5rem;
-  position: relative;
-}
-
-/* Arrow indicator */
-.collapsible::after {
-  content: '\25BC'; /* Down arrow */
-  font-size: 0.9rem;
-  position: absolute;
-  right: 16px;
-  transition: transform 0.3s;
-}
-
-.active-collapsible::after {
-  transform: rotate(180deg); /* Flips arrow */
-}
-
-.collapsible:hover {
-  background: #ffe0e0;
-}
-
-.active-collapsible {
-  background-color: #ffe0e0;
-}
-
-/* Smooth Collapsible Content */
-.content-collapsible {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.3s ease;
-  background-color: #fff;
-  border-left: 2px solid #f28b82;
-  border-radius: 0 0 8px 8px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-  padding: 0 1rem;
-}
-
-/* Footer */
-footer {
-  background: #f28b82;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-/* Internal Links */
-a.internal-link {
-  color: #d84315;
-  text-decoration: underline;
-}
-
-a.internal-link:hover {
-  color: #f28b82;
-}
-
-/* Contact Page Specific */
-.center-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-.center-content .box {
-  flex: 1 1 220px;
-  max-width: 240px;
-  text-align: center;
-}
-
 /* Loader */
 #loader {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff5f5;
+  inset: 0;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: #d84315;
-  z-index: 9999;
+  font-weight: bold;
+  z-index: 1000;
 }
+
+/* Wrapper & Layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: calc(100vh - 120px);
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #b71c1c; /* Red accent */
+}
+
+header p {
+  margin: 0.2rem 0 1rem;
+  color: #666;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #b71c1c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Timeline + Collapsible */
+.timeline {
+  margin: 2rem 0;
+}
+
+.timeline-entry {
+  margin-bottom: 1rem;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.collapsible {
+  background: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+}
+
+.collapsible::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  font-weight: bold;
+}
+
+.collapsible.active-collapsible::after {
+  content: '–';
+}
+
+.collapsible:hover {
+  background: #e8e8e8;
+}
+
+.content-collapsible {
+  display: none;
+  padding: 0.8rem 1.2rem;
+  border-left: 3px solid #b71c1c;
+  background: #fff;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px
