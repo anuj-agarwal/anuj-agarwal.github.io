@@ -6,7 +6,7 @@ permalink: /achievements/
 
 # Achievements Highlights
 
-<div class="timeline">
+<div class="timeline fade-in">
 
 <div class="timeline-entry">
   <button class="collapsible">Generative AI in Financial Audits</button>
