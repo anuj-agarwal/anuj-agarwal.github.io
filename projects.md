@@ -4,44 +4,43 @@ title: "Projects"
 permalink: /projects/
 ---
 
-# Featured Projects
+# Projects
 
-<!-- Project 1 -->
-<button class="collapsible">Generative AI in Finance</button>
-<div class="content-collapsible">
-  <p>LangChain-based Math Accuracy Checker to improve audit workflows and reduce manual review by 70%. Integrated with LangGraph for enhanced validation.</p>
+<div class="timeline">
+
+<div class="timeline-entry">
+  <div class="timeline-date">2023</div>
+  <button class="collapsible">Generative AI in Finance</button>
+  <div class="content-collapsible">
+    <p>LangChain-based Math Accuracy Checker transforming audit workflows. Supports RAG pipelines, vector databases, and ensures precise calculations for financial data.</p>
+  </div>
 </div>
 
-<!-- Project 2 -->
-<button class="collapsible">Healthcare Innovation</button>
-<div class="content-collapsible">
-  <p>Patent-pending CT clustering algorithm optimizing imaging protocols. Built conditional GANs to generate realistic synthetic CT images for low-data scenarios.</p>
+<div class="timeline-entry">
+  <div class="timeline-date">2022</div>
+  <button class="collapsible">Healthcare Innovation</button>
+  <div class="content-collapsible">
+    <p>Patent-pending CT clustering algorithm optimizing imaging protocols. Integrated GANs for synthetic image generation and YOLO models for pathology detection.</p>
+  </div>
 </div>
 
-<!-- Project 3 -->
-<button class="collapsible">Computer Vision Pathology Detection</button>
-<div class="content-collapsible">
-  <p>YOLO-based pathology detection model achieving 95% diagnostic accuracy. Used in hospitals to improve early detection efficiency.</p>
+<div class="timeline-entry">
+  <div class="timeline-date">2021</div>
+  <button class="collapsible">Cybersecurity MDR System</button>
+  <div class="content-collapsible">
+    <p>AI-powered Managed Detection & Response platform predicting advanced cyber threats. Multi-model framework ensures high accuracy and low false positives.</p>
+  </div>
 </div>
 
-<!-- Project 4 -->
-<button class="collapsible">Cybersecurity MDR System</button>
-<div class="content-collapsible">
-  <p>AI-powered Managed Detection & Response system predicting advanced threats with 95% accuracy. Integrated multi-model framework for real-time threat intelligence.</p>
 </div>
 
-<!-- Collapsible JS -->
 <script>
-  const collapsibles = document.querySelectorAll(".collapsible");
-  collapsibles.forEach(c => {
-    c.addEventListener("click", function() {
-      this.classList.toggle("active-collapsible");
-      const content = this.nextElementSibling;
-      if(content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-collapsible");
+    var content = this.nextElementSibling;
+    content.style.display = (content.style.display === "block") ? "none" : "block";
   });
+}
 </script>
