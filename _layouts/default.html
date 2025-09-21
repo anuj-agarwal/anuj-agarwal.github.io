@@ -1,3 +1,6 @@
+---
+## `_layouts/default.html` – Updated with Loader
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,11 @@
   <script src="/assets/scripts.js" defer></script>
 </head>
 <body>
+  <!-- Loader -->
+  <div id="page-loader" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:9999; display:flex; justify-content:center; align-items:center;">
+    <p style="font-size:2rem; color:#d84315; font-family:'Segoe UI', sans-serif;">Loading...</p>
+  </div>
+
   <div class="wrapper">
     <header>
       <nav>
@@ -30,5 +38,6 @@
       <p>&copy; {{ site.time | date: "%Y" }} Anuj Agarwal</p>
     </footer>
   </div>
+
 </body>
 </html>
