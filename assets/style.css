@@ -8,8 +8,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  background: #eef4fb; /* light blue tone */
-  color: #1e2a38;
+  background: #fff5f5; /* very light red/pink background */
+  color: #2d1b1b;
 }
 
 .wrapper {
@@ -19,13 +19,13 @@ body {
 }
 
 header {
-  background: #004aad; /* blue from resume */
+  background: #f28b82; /* Red Accent Lighter 60% */
   padding: 1rem;
   text-align: center;
 }
 
 nav a {
-  color: #fdfdfd;
+  color: #fffdfd;
   margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
@@ -33,38 +33,39 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #ffe082; /* warm golden highlight */
 }
 
 nav a.active {
-  border-bottom: 3px solid #ffd700;
+  border-bottom: 3px solid #ffe082;
   padding-bottom: 3px;
 }
 
 /* Headings */
 h1, h2, h3 {
-  color: #004aad; /* resume theme blue */
+  color: #d84315; /* deeper red for contrast */
 }
 
 /* Box Cards */
 .box {
   background: #ffffff;
-  border: 2px solid #a5c9ff;
+  border: 2px solid #f28b82;
   border-radius: 12px;
   padding: 1rem 1.5rem;
   margin: 1rem 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  background: #fff0f0; /* light red hover */
 }
 
 /* Timeline */
 .timeline {
-  border-left: 4px solid #004aad;
+  border-left: 4px solid #f28b82;
   margin: 2rem 0;
   padding-left: 1.5rem;
 }
@@ -81,19 +82,19 @@ h1, h2, h3 {
   top: 5px;
   width: 16px;
   height: 16px;
-  background: #ffd700;
+  background: #ffe082; /* golden dot */
   border-radius: 50%;
-  border: 3px solid #004aad;
+  border: 3px solid #f28b82;
 }
 
 .timeline-entry h3 {
   margin: 0;
-  color: #004aad;
+  color: #d84315; /* darker red */
 }
 
 /* Footer fixed at bottom */
 footer {
-  background: #004aad;
+  background: #f28b82;
   color: #fff;
   text-align: center;
   padding: 1rem;
