@@ -12,8 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.toggle("active-collapsible");
       const content = this.nextElementSibling;
 
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
+      if (!content) return;
+
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
         content.style.paddingTop = "0";
         content.style.paddingBottom = "0";
       } else {
