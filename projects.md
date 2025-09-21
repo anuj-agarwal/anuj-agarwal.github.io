@@ -4,7 +4,7 @@ title: "Projects"
 permalink: /projects/
 ---
 
-# Projects
+# Featured Projects
 
 <div class="timeline">
 
