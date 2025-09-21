@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Loader functionality
-  const loader = document.getElementById("loader");
-  window.addEventListener("load", function () {
-    if (loader) loader.style.display = "none";
-  });
-
   // Collapsible functionality
   const coll = document.getElementsByClassName("collapsible");
   for (let i = 0; i < coll.length; i++) {
