@@ -1,28 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Collapsible functionality
-  var coll = document.getElementsByClassName("collapsible");
+document.addEventListener("DOMContentLoaded", function () {
+  // Loader functionality
+  const loader = document.createElement("div");
+  loader.id = "loader";
+  loader.innerHTML = "Loading...";
+  document.body.appendChild(loader);
+
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+
+  // Collapsible functionality with smooth animation
+  const coll = document.getElementsByClassName("collapsible");
   for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active-collapsible");
-      var content = this.nextElementSibling;
+      const content = this.nextElementSibling;
 
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
+        content.style.paddingTop = "0";
+        content.style.paddingBottom = "0";
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
+        content.style.paddingTop = "0.5rem";
+        content.style.paddingBottom = "0.5rem";
       }
     });
-  }
-});
-
-// Loader functionality
-window.addEventListener("load", function() {
-  const loader = document.getElementById("page-loader");
-  if (loader) {
-    loader.style.transition = "opacity 0.6s ease";
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 600);
   }
 });
