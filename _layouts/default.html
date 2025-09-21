@@ -7,16 +7,11 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <!-- Loader -->
-  <div id="loader">Loading...</div>
-
   <!-- Main Wrapper -->
   <div class="wrapper">
     
     <!-- Header -->
     <header>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
       <nav>
         <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
         <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
