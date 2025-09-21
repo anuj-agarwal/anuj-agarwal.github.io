@@ -2,14 +2,13 @@
 html, body {
   height: 100%;
   margin: 0;
-  width: 100%;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  background: #fff5f5; /* light red/pink */
+  background: #fff5f5;
   color: #2d1b1b;
 }
 
@@ -17,10 +16,9 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -50,11 +48,9 @@ nav a.active {
 /* Headings */
 h1, h2, h3 {
   color: #d84315;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
 }
 
-/* Full-width cards */
+/* Box Cards */
 .box {
   background: #ffffff;
   border: 2px solid #f28b82;
@@ -63,7 +59,6 @@ h1, h2, h3 {
   margin: 1rem 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-  width: 100%;
 }
 
 .box:hover {
@@ -76,14 +71,14 @@ h1, h2, h3 {
 .timeline {
   position: relative;
   margin: 2rem 0;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 40px;
+  left: 30px;
   width: 4px;
   height: 100%;
   background: #f28b82;
@@ -92,31 +87,34 @@ h1, h2, h3 {
 .timeline-entry {
   position: relative;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .timeline-entry::before {
   content: '';
   position: absolute;
-  left: 32px;
+  left: 22px;
   width: 16px;
   height: 16px;
   background: #ffe082;
   border-radius: 50%;
   border: 3px solid #f28b82;
-  top: 5px;
+  top: 0;
 }
 
 /* Date left of timeline */
 .timeline-date {
   position: absolute;
-  left: -140px;
-  width: 120px;
+  left: -160px;
+  width: 140px;
   text-align: right;
   font-weight: bold;
   color: #d84315;
+  top: 0;
 }
 
-/* Collapsible */
+/* Collapsible Buttons */
 .collapsible {
   background-color: #fff0f0;
   color: #2d1b1b;
@@ -129,7 +127,7 @@ h1, h2, h3 {
   outline: none;
   font-size: 1.1rem;
   transition: background 0.2s;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .collapsible:hover {
@@ -141,27 +139,55 @@ h1, h2, h3 {
 }
 
 .content-collapsible {
-  padding: 12px 18px;
+  padding: 0.5rem 1rem;
   display: none;
   overflow: hidden;
   background-color: #fff;
   border-left: 2px solid #f28b82;
-  border-right: 2px solid #f28b82;
-  border-bottom: 2px solid #f28b82;
   border-radius: 0 0 8px 8px;
-  margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
 /* Achievements Timeline */
 .achievements-timeline {
   position: relative;
-  margin-left: 0;
-  padding: 2rem 0;
+  margin: 2rem 0;
+  padding-left: 40px;
+  max-width: 900px;
 }
 
-.timeline-card {
+.achievements-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 4px;
+  height: 100%;
+  background: #f28b82;
+}
+
+.achievements-entry {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.achievements-dot {
+  width: 16px;
+  height: 16px;
+  background: #ffe082;
+  border: 3px solid #f28b82;
+  border-radius: 50%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  position: relative;
+  top: 0.25rem;
+}
+
+.achievements-card {
   background: #ffffff;
   border: 2px solid #f28b82;
   border-radius: 12px;
@@ -171,9 +197,21 @@ h1, h2, h3 {
   width: 100%;
 }
 
-.timeline-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+.achievements-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #d84315;
+}
+
+.achievements-card p {
+  margin: 0;
+  line-height: 1.5;
+  color: #2d1b1b;
+}
+
+.achievements-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   background: #fff0f0;
 }
 
@@ -186,7 +224,7 @@ footer {
   margin-top: auto;
 }
 
-/* Internal links */
+/* Internal Links */
 a.internal-link {
   color: #d84315;
   text-decoration: underline;
@@ -194,16 +232,4 @@ a.internal-link {
 
 a.internal-link:hover {
   color: #f28b82;
-}
-
-/* Contact Page Specific */
-.center-content {
-  text-align: center;
-}
-
-.center-content a.box {
-  display: inline-block;
-  margin: 1rem;
-  max-width: 220px;
-  width: 100%;
 }
