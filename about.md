@@ -13,7 +13,7 @@ permalink: /about/
   <ul>
     <li>Use <strong>Generative AI and LLMs</strong> to automate and optimize business processes <a class="internal-link" href="/experience/">(Experience)</a>.</li>
     <li>Leverage <strong>Computer Vision</strong> and <strong>Deep Learning</strong> to enhance healthcare diagnostics.</li>
-    <li>Implement <strong>Retrieval-Augmented Generation</strong> and <strongSemantic NLP pipelines</strong> for knowledge extraction and automation.</li>
+    <li>Implement <strong>Retrieval-Augmented Generation</strong> and <strong>Semantic NLP pipelines</strong> for knowledge extraction and automation.</li>
   </ul>
 
   <p>Outside work, I enjoy exploring new AI tools, mentoring teams, and publishing research. I believe in continuous learning, collaboration, and delivering solutions that have meaningful impact.</p>
