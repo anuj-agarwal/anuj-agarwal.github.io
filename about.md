@@ -11,10 +11,11 @@ permalink: /about/
 
   <p>Along the way, I have delivered projects that:</p>
   <ul>
-    <li>Use <strong>Generative AI and LLMs</strong> to automate and optimize business processes.</li>
+    <li>Use <strong>Generative AI and LLMs</strong> to automate and optimize business processes ([Experience](/experience/)).</li>
     <li>Leverage <strong>Computer Vision</strong> and <strong>Deep Learning</strong> to enhance healthcare diagnostics.</li>
     <li>Implement <strong>Retrieval-Augmented Generation</strong> and <strongSemantic NLP pipelines</strong> for knowledge extraction and automation.</li>
   </ul>
 
   <p>Outside work, I enjoy exploring new AI tools, mentoring teams, and publishing research. I believe in continuous learning, collaboration, and delivering solutions that have meaningful impact.</p>
+  <p>Learn more about my <strong>[Skills](/skills/)</strong>, <strong>[Projects](/projects/)</strong>, and <strong>[Achievements](/achievements/)</strong>.</p>
 </div>
