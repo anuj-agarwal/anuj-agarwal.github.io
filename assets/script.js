@@ -1,12 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Loader functionality
-  const loader = document.createElement("div");
-  loader.id = "loader";
-  loader.innerHTML = "Loading...";
-  document.body.appendChild(loader);
-
+  const loader = document.getElementById("loader");
   window.addEventListener("load", function () {
-    loader.style.display = "none";
+    if(loader) loader.style.display = "none";
   });
 
   // Collapsible functionality with smooth animation
