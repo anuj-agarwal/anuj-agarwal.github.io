@@ -3,7 +3,7 @@ layout: default
 title: "Publications & Patents"
 permalink: /publications/
 ---
-<div style="margin-left:12%; max-width:800px;">
+<div style="margin-left:12%; max-width:800px;" class="fade-in">
   <h2>Patents</h2>
   <ul>
     <li>Novel unsupervised clustering for CT imaging protocols (Patent pending, 2022)</li>
