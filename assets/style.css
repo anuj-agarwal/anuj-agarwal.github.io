@@ -10,12 +10,16 @@ body {
   flex-direction: column;
   background: #fff5f5; /* light red background */
   color: #2d1b1b;
+  line-height: 1.6;
 }
 
 .wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -45,9 +49,10 @@ nav a.active {
 /* Headings */
 h1, h2, h3 {
   color: #d84315;
+  margin-top: 1rem;
 }
 
-/* General box cards */
+/* General Box Cards */
 .box {
   background: #ffffff;
   border: 2px solid #f28b82;
@@ -64,48 +69,80 @@ h1, h2, h3 {
   background: #fff0f0;
 }
 
-/* Timeline */
-.timeline {
+/* Timeline Common */
+.timeline-container {
   position: relative;
+  padding-left: 80px; /* space for date/line */
   margin: 2rem 0;
-  padding-left: 60px;
 }
 
-.timeline::before {
-  content: '';
+.timeline-line {
   position: absolute;
   top: 0;
-  left: 30px;
+  left: 40px;
   width: 4px;
   height: 100%;
   background: #f28b82;
 }
 
+/* Timeline Entry */
 .timeline-entry {
   position: relative;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
 }
 
-.timeline-entry::before {
-  content: '';
-  position: absolute;
-  left: 22px;
+.timeline-dot {
   width: 16px;
   height: 16px;
   background: #ffe082;
-  border-radius: 50%;
   border: 3px solid #f28b82;
-  top: 5px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  position: relative;
+  top: 0.5rem;
 }
 
-/* Date left of timeline */
+/* Timeline Card */
+.timeline-card {
+  background: #ffffff;
+  border: 2px solid #f28b82;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  max-width: 700px;
+}
+
+.timeline-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #d84315;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #2d1b1b;
+  line-height: 1.5;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  background: #fff0f0;
+}
+
+/* Timeline Date (left aligned) */
 .timeline-date {
   position: absolute;
-  left: -150px;
+  left: -160px;
   width: 140px;
   text-align: right;
   font-weight: bold;
   color: #d84315;
+  top: 0;
 }
 
 /* Collapsible */
@@ -121,14 +158,12 @@ h1, h2, h3 {
   outline: none;
   font-size: 1.1rem;
   transition: background 0.2s;
+  margin-bottom: 0.5rem;
 }
 
-.collapsible:hover {
-  background: #ffe0e0;
-}
-
+.collapsible:hover,
 .active-collapsible {
-  background-color: #ffe0e0;
+  background: #ffe0e0;
 }
 
 .content-collapsible {
@@ -144,69 +179,20 @@ h1, h2, h3 {
 /* Achievements Timeline */
 .achievements-timeline {
   position: relative;
-  margin-left: 12%;
+  padding-left: 60px;
   max-width: 900px;
-  padding: 2rem 0;
+  margin: 2rem auto;
 }
 
-.timeline-entry {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: #ffe082; /* golden dot */
-  border: 3px solid #f28b82; /* red theme */
-  border-radius: 50%;
-  margin-right: 1rem;
-  flex-shrink: 0;
-  position: relative;
-  top: 0.5rem;
-}
-
-.timeline-card {
-  background: #ffffff;
-  border: 2px solid #f28b82;
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-  max-width: 700px;
-}
-
-.timeline-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #d84315; /* deeper red */
-}
-
-.timeline-card p {
-  margin: 0;
-  line-height: 1.5;
-  color: #2d1b1b;
-}
-
-.timeline-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  background: #fff0f0; /* light red hover */
-}
-
-/* Optional: Connect dots with a vertical line */
 .achievements-timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 8px; /* half of dot width + border */
+  left: 28px;
   width: 4px;
   height: 100%;
-  background: #f28b82; /* red theme line */
+  background: #f28b82;
 }
-
 
 /* Footer */
 footer {
@@ -217,7 +203,7 @@ footer {
   margin-top: auto;
 }
 
-/* Links style */
+/* Internal Links */
 a.internal-link {
   color: #d84315;
   text-decoration: underline;
@@ -225,4 +211,12 @@ a.internal-link {
 
 a.internal-link:hover {
   color: #f28b82;
+}
+
+/* Center content helper for Home/Blog/Contact */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
