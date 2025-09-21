@@ -1,28 +1,39 @@
 /* General Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f3f0ff; /* light lavender */
-  color: #2d2a4a;
+  display: flex;
+  flex-direction: column;
+  background: #eef4fb; /* light blue tone */
+  color: #1e2a38;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #6a0dad; /* bright purple */
+  background: #004aad; /* blue from resume */
   padding: 1rem;
   text-align: center;
 }
 
 nav a {
-  color: #f3f0ff;
+  color: #fdfdfd;
   margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav a:hover {
-  color: #ffd700; /* gold on hover */
+  color: #ffd700;
 }
 
 nav a.active {
@@ -32,22 +43,28 @@ nav a.active {
 
 /* Headings */
 h1, h2, h3 {
-  color: #6a0dad; /* purple */
+  color: #004aad; /* resume theme blue */
 }
 
-/* Content Boxes */
+/* Box Cards */
 .box {
-  background: #fff0f5; /* light pink background */
-  border: 2px solid #d291ff;
-  border-radius: 10px;
+  background: #ffffff;
+  border: 2px solid #a5c9ff;
+  border-radius: 12px;
   padding: 1rem 1.5rem;
   margin: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Timeline for Experience */
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Timeline */
 .timeline {
-  border-left: 4px solid #6a0dad;
+  border-left: 4px solid #004aad;
   margin: 2rem 0;
   padding-left: 1.5rem;
 }
@@ -66,18 +83,19 @@ h1, h2, h3 {
   height: 16px;
   background: #ffd700;
   border-radius: 50%;
-  border: 3px solid #6a0dad;
+  border: 3px solid #004aad;
 }
 
 .timeline-entry h3 {
   margin: 0;
-  color: #6a0dad;
+  color: #004aad;
 }
 
+/* Footer fixed at bottom */
 footer {
-  background: #6a0dad;
+  background: #004aad;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: auto;
 }
