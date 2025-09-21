@@ -139,7 +139,7 @@ footer {
 .content-collapsible {
   max-height: 0;
   overflow: hidden;
-  padding: 0;
+  padding: 0 1rem;
   border-left: 3px solid #b71c1c;
   background: #fff;
   margin-top: 0.3rem;
