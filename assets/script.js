@@ -11,13 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active-collapsible");
 
-      // Find next sibling element that is a div (skip text nodes)
+      // Get the next sibling element (skip text nodes)
       let content = this.nextSibling;
-      while (content && content.nodeType !== 1) { // Node.ELEMENT_NODE
+      while (content && content.nodeType !== 1) {
         content = content.nextSibling;
       }
       if (!content) return;
 
+      // Use requestAnimationFrame to ensure correct scrollHeight
       if (content.style.maxHeight && content.style.maxHeight !== "0px") {
         // Collapse
         content.style.maxHeight = "0";
@@ -25,9 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.paddingBottom = "0";
       } else {
         // Expand
-        content.style.maxHeight = content.scrollHeight + "px";
-        content.style.paddingTop = "0.5rem";
-        content.style.paddingBottom = "0.5rem";
+        requestAnimationFrame(() => {
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.paddingTop = "0.5rem";
+          content.style.paddingBottom = "0.5rem";
+        });
       }
     });
   }
