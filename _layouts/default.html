@@ -6,27 +6,28 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-      <a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-      <a href="/skills/" class="{% if page.url == '/skills/' %}active{% endif %}">Skills</a>
-      <a href="/experience/" class="{% if page.url == '/experience/' %}active{% endif %}">Experience</a>
-      <a href="/projects/" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
-      <a href="/publications/" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
-      <a href="/achievements/" class="{% if page.url == '/achievements/' %}active{% endif %}">Achievements</a>
-      <a href="/blog/" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
-      <a href="/contact/" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+        <a href="/skills/" class="{% if page.url == '/skills/' %}active{% endif %}">Skills</a>
+        <a href="/experience/" class="{% if page.url == '/experience/' %}active{% endif %}">Experience</a>
+        <a href="/projects/" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
+        <a href="/publications/" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
+        <a href="/achievements/" class="{% if page.url == '/achievements/' %}active{% endif %}">Achievements</a>
+        <a href="/blog/" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
+        <a href="/contact/" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-  </main>
+    <main>
+      {{ content }}
+    </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} Anuj Agarwal</p>
-  </footer>
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} Anuj Agarwal</p>
+    </footer>
+  </div>
 </body>
 </html>
