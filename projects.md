@@ -32,15 +32,20 @@ permalink: /projects/
   </div>
 </div>
 
+<div class="timeline-entry">
+  <div class="timeline-date">2020</div>
+  <button class="collapsible">Document Semantic Pipeline</button>
+  <div class="content-collapsible">
+    <p>Built a pipeline to extract, classify, and semantically query large PDF repositories using NLP embeddings and vector DBs.</p>
+  </div>
 </div>
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active-collapsible");
-    var content = this.nextElementSibling;
-    content.style.display = (content.style.display === "block") ? "none" : "block";
-  });
-}
-</script>
+<div class="timeline-entry">
+  <div class="timeline-date">2019</div>
+  <button class="collapsible">AI Chat Agent for Healthcare</button>
+  <div class="content-collapsible">
+    <p>Developed a chatbot using RAG and fine-tuned LLMs to assist clinicians in retrieving medical knowledge efficiently.</p>
+  </div>
+</div>
+
+</div>
