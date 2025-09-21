@@ -3,7 +3,7 @@ layout: default
 title: "Skills"
 permalink: /skills/
 ---
-<div style="margin-left:12%; max-width:800px;" class="fade-in">
+<div style="margin-left:12%; max-width:900px;" class="fade-in">
   <h2>AI / ML Expertise</h2>
   <ul>
     <li>Generative AI & LLMs: Built LangChain-based AI agents for finance audits and productivity tools.</li>
