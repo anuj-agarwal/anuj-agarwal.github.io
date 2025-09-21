@@ -5,7 +5,16 @@ permalink: /about/
 ---
 <div style="margin-left:12%; max-width:800px;">
   <h2>About Me</h2>
-  <p>Hi! I'm Anuj, a Generative AI & Machine Learning enthusiast. I love transforming complex problems into simple, scalable solutions that make a real impact.</p>
-  <p>With a background in <strong>Electronics & Communications (NIT Silchar)</strong> and 9+ years in AI/ML, I’ve worked across Finance, Healthcare, and Cybersecurity domains.</p>
-  <p>Outside of work, I enjoy exploring new AI tools, tinkering with generative art, and mentoring aspiring AI practitioners. Every project is an opportunity to innovate and learn!</p>
+  <p>Hello! I'm <strong>Anuj Agarwal</strong>, a Generative AI & Machine Learning Leader with over 9 years of experience across <strong>Finance, Healthcare, and Cybersecurity</strong>. I love building AI solutions that solve real-world problems and scale across industries.</p>
+
+  <p>My journey started at <strong>NIT Silchar</strong> with a degree in Electronics & Communications, where I built a strong foundation in engineering, algorithms, and data-driven problem solving. I then progressed through diverse roles, from technology consulting and AI research to leading enterprise AI adoption at KPMG.</p>
+
+  <p>Along the way, I have delivered projects that:</p>
+  <ul>
+    <li>Use <strong>Generative AI and LLMs</strong> to automate and optimize business processes.</li>
+    <li>Leverage <strong>Computer Vision</strong> and <strong>Deep Learning</strong> to enhance healthcare diagnostics.</li>
+    <li>Implement <strong>Retrieval-Augmented Generation</strong> and <strongSemantic NLP pipelines</strong> for knowledge extraction and automation.</li>
+  </ul>
+
+  <p>Outside work, I enjoy exploring new AI tools, mentoring teams, and publishing research. I believe in continuous learning, collaboration, and delivering solutions that have meaningful impact.</p>
 </div>
