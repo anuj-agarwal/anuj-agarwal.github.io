@@ -8,7 +8,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  background: #fff5f5; /* very light red/pink background */
+  background: #fff5f5; /* light red background */
   color: #2d1b1b;
 }
 
@@ -18,8 +18,9 @@ body {
   flex-direction: column;
 }
 
+/* Header */
 header {
-  background: #f28b82; /* Red Accent Lighter 60% */
+  background: #f28b82; 
   padding: 1rem;
   text-align: center;
 }
@@ -33,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffe082; /* warm golden highlight */
+  color: #ffe082;
 }
 
 nav a.active {
@@ -43,10 +44,10 @@ nav a.active {
 
 /* Headings */
 h1, h2, h3 {
-  color: #d84315; /* deeper red for contrast */
+  color: #d84315;
 }
 
-/* Box Cards */
+/* General box cards */
 .box {
   background: #ffffff;
   border: 2px solid #f28b82;
@@ -60,43 +61,101 @@ h1, h2, h3 {
 .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  background: #fff0f0; /* light red hover */
+  background: #fff0f0;
 }
 
 /* Timeline */
 .timeline {
-  border-left: 4px solid #f28b82;
+  position: relative;
   margin: 2rem 0;
-  padding-left: 1.5rem;
+  padding-left: 60px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 4px;
+  height: 100%;
+  background: #f28b82;
 }
 
 .timeline-entry {
-  margin-bottom: 2rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .timeline-entry::before {
-  content: "";
+  content: '';
   position: absolute;
-  left: -12px;
-  top: 5px;
+  left: 22px;
   width: 16px;
   height: 16px;
-  background: #ffe082; /* golden dot */
+  background: #ffe082;
   border-radius: 50%;
   border: 3px solid #f28b82;
+  top: 5px;
 }
 
-.timeline-entry h3 {
-  margin: 0;
-  color: #d84315; /* darker red */
+/* Date left of timeline */
+.timeline-date {
+  position: absolute;
+  left: -150px;
+  width: 140px;
+  text-align: right;
+  font-weight: bold;
+  color: #d84315;
 }
 
-/* Footer fixed at bottom */
+/* Collapsible */
+.collapsible {
+  background-color: #fff0f0;
+  color: #2d1b1b;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: 2px solid #f28b82;
+  border-radius: 8px;
+  text-align: left;
+  outline: none;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.collapsible:hover {
+  background: #ffe0e0;
+}
+
+.active-collapsible {
+  background-color: #ffe0e0;
+}
+
+.content-collapsible {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+  border-left: 2px solid #f28b82;
+  margin-bottom: 1rem;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Footer */
 footer {
   background: #f28b82;
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin-top: auto;
+}
+
+/* Links style */
+a.internal-link {
+  color: #d84315;
+  text-decoration: underline;
+}
+
+a.internal-link:hover {
+  color: #f28b82;
 }
