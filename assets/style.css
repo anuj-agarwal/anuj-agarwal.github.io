@@ -128,7 +128,7 @@ footer {
   font-size: 1.2rem;
 }
 
-.collapsible.active-collapsible::after {
+.active-collapsible::after {
   content: '–';
 }
 
