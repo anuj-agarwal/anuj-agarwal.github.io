@@ -6,7 +6,7 @@ permalink: /experience/
 
 # Professional Experience
 
-<div class="timeline">
+<div class="timeline fade-in">
 
 <!-- KPMG -->
 <div class="timeline-entry">
