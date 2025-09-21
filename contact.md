@@ -18,10 +18,10 @@ permalink: /contact/
 </a>
 
 <!-- Phone -->
-<a href="tel:+919999999999" class="box">
+<a href="tel:+919401883416" class="box">
   📞<br>
   <strong>Phone</strong><br>
-  +91-94018 83416
+  +91 94018 83416
 </a>
 
 <!-- LinkedIn -->
