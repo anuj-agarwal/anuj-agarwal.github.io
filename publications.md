@@ -6,13 +6,13 @@ permalink: /publications/
 <div style="margin-left:12%; max-width:800px;">
   <h2>Patents</h2>
   <ul>
-    <li>Novel unsupervised clustering algorithm for CT imaging protocols (Patent-Pending).</li>
+    <li>Novel unsupervised clustering for CT imaging protocols (Patent pending, 2022)</li>
   </ul>
 
   <h2>Research Papers</h2>
   <ul>
-    <li>Generative AI applications in Finance – multiple publications.</li>
-    <li>Healthcare AI and imaging innovations – published research.</li>
+    <li>Generative AI applications in Finance – multiple publications (2023 - Present)</li>
+    <li>Healthcare AI and imaging innovations – published research (2019–2022)</li>
   </ul>
 
   <h2>Other Contributions</h2>
