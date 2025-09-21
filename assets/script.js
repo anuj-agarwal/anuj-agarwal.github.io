@@ -1,28 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-  // Loader display
-  let loader = document.createElement('div');
-  loader.id = 'page-loader';
-  loader.style.position = 'fixed';
-  loader.style.top = '0';
-  loader.style.left = '0';
-  loader.style.width = '100%';
-  loader.style.height = '100%';
-  loader.style.background = '#fff';
-  loader.style.zIndex = '9999';
-  loader.style.display = 'flex';
-  loader.style.justifyContent = 'center';
-  loader.style.alignItems = 'center';
-  loader.innerHTML = '<p style="font-size:2rem;">Loading...</p>';
-  document.body.appendChild(loader);
-
-  window.onload = () => {
-    loader.style.transition = 'opacity 0.5s';
-    loader.style.opacity = 0;
-    setTimeout(() => loader.remove(), 500);
-  };
-
-  // Collapsible functionality with smooth animation
+  // Collapsible functionality
   var coll = document.getElementsByClassName("collapsible");
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
@@ -35,5 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
+  }
+});
+
+// Loader functionality
+window.addEventListener("load", function() {
+  const loader = document.getElementById("page-loader");
+  if (loader) {
+    loader.style.transition = "opacity 0.6s ease";
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 600);
   }
 });
