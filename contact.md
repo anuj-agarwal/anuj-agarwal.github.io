@@ -5,6 +5,6 @@ permalink: /contact/
 ---
 # Contact Me  
 
-📧 [chirania.anuj@gmail.com](mailto:chirania.anuj@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/anuj-agarwal0210)  
-💻 [GitHub](https://github.com/<your-username>)  
+📧 Email: [chirania.anuj@gmail.com](mailto:chirania.anuj@gmail.com)  
+🔗 LinkedIn: [anuj-agarwal0210](https://linkedin.com/in/anuj-agarwal0210)  
+💻 GitHub: [anuj-agarwal](https://github.com/anuj-agarwal)  
