@@ -6,7 +6,7 @@ permalink: /projects/
 
 # Featured Projects
 
-<div class="timeline">
+<div class="timeline fade-in">
 
 <div class="timeline-entry">
   <div class="timeline-date">2023</div>
