@@ -6,21 +6,24 @@ permalink: /skills/
 <div style="margin-left:12%; max-width:800px;">
   <h2>AI / ML Expertise</h2>
   <ul>
-    <li><strong>Generative AI & LLMs:</strong> Built LangChain-based Math Accuracy Checker for finance audits. <a href="https://github.com/anuj-agarwal/Adjusting-short-straddle-Quant-bot">GitHub Link</a></li>
-    <li><strong>NLP:</strong> Semantic similarity and text extraction pipelines for PDFs (Algonox).</li>
-    <li><strong>Computer Vision:</strong> YOLO-based pathology detection models (Siemens Healthcare, 95% accuracy).</li>
-    <li><strong>Prompt Engineering & Agent Architectures:</strong> Designed intelligent AI agents for finance and healthcare workflows.</li>
+    <li>Generative AI & LLMs: Built LangChain-based AI agents for finance audits and productivity tools.</li>
+    <li>NLP & Semantic Analysis: Used for PDF extraction and similarity models in projects like <a class="internal-link" href="/projects/">Algonox pipelines</a>.</li>
+    <li>Computer Vision: YOLO-based detection in healthcare diagnostics.</li>
+    <li>Prompt Engineering & Agent Design: Multi-step AI agent workflows in enterprise environments.</li>
+    <li>RAG & Vector Databases: Retrieval-augmented generation for document understanding.</li>
   </ul>
 
-  <h2>Tech Stack</h2>
+  <h2>Tech Stack & Tools</h2>
   <ul>
-    <li>Python, Azure Cloud, APIs, MLOps, GitHub Copilot</li>
-    <li>Containerized deployments, CI/CD pipelines, and scalable infrastructure</li>
+    <li>Python, PyTorch, TensorFlow, OpenCV</li>
+    <li>Azure, AWS, Docker, Kubernetes</li>
+    <li>MLOps: CI/CD pipelines, model versioning, monitoring</li>
+    <li>APIs, GitHub Copilot, LangChain, LangGraph</li>
   </ul>
 
   <h2>Leadership & Product</h2>
   <ul>
-    <li>Mentorship, team enablement, product development guidance</li>
-    <li>Driving AI adoption, AI strategy, and knowledge sharing</li>
+    <li>Mentorship, AI adoption, and knowledge sharing</li>
+    <li>Product ideation, development, and deployment guidance</li>
   </ul>
 </div>
