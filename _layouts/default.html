@@ -1,43 +1,48 @@
----
-## `_layouts/default.html` – Updated with Loader
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} - Anuj Agarwal</title>
-  <link rel="stylesheet" href="/assets/style.css">
-  <script src="/assets/scripts.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <!-- Loader -->
-  <div id="page-loader" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:9999; display:flex; justify-content:center; align-items:center;">
-    <p style="font-size:2rem; color:#d84315; font-family:'Segoe UI', sans-serif;">Loading...</p>
-  </div>
-  
+  <div id="loader">Loading...</div>
+
+  <!-- Main Wrapper -->
   <div class="wrapper">
+    
+    <!-- Header -->
     <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
       <nav>
-        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-        <a href="/skills/" class="{% if page.url == '/skills/' %}active{% endif %}">Skills</a>
-        <a href="/experience/" class="{% if page.url == '/experience/' %}active{% endif %}">Experience</a>
-        <a href="/projects/" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
-        <a href="/publications/" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
-        <a href="/achievements/" class="{% if page.url == '/achievements/' %}active{% endif %}">Achievements</a>
-        <a href="/blog/" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
-        <a href="/contact/" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+        <a href="{{ '/skills/' | relative_url }}" class="{% if page.url == '/skills/' %}active{% endif %}">Skills</a>
+        <a href="{{ '/experience/' | relative_url }}" class="{% if page.url == '/experience/' %}active{% endif %}">Experience</a>
+        <a href="{{ '/projects/' | relative_url }}" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
+        <a href="{{ '/publications/' | relative_url }}" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
+        <a href="{{ '/achievements/' | relative_url }}" class="{% if page.url == '/achievements/' %}active{% endif %}">Achievements</a>
+        <a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
+        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
       </nav>
     </header>
 
+    <!-- Page Content -->
     <main>
       {{ content }}
     </main>
 
-    <footer>
-      <p>&copy; {{ site.time | date: "%Y" }} Anuj Agarwal</p>
-    </footer>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="{{ '/assets/scripts.js' | relative_url }}"></script>
 </body>
 </html>
