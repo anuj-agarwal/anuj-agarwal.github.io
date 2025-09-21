@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 /* Header */
@@ -50,7 +50,7 @@ h1, h2, h3 {
   color: #d84315;
 }
 
-/* Box Cards for Projects, Experience, Achievements */
+/* Box Cards for Projects, Experience, Achievements, Contact */
 .box, .timeline-card, .achievements-card {
   background: #ffffff;
   border: 2px solid #f28b82;
@@ -72,33 +72,12 @@ h1, h2, h3 {
 .timeline, .achievements-timeline {
   position: relative;
   margin: 2rem 0;
-  padding-left: 60px;
-}
-
-.timeline::before, .achievements-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 30px;
-  width: 4px;
-  height: 100%;
-  background: #f28b82;
+  padding-left: 0; /* no date left */
 }
 
 .timeline-entry, .achievements-entry {
   position: relative;
-  margin-bottom: 2rem;
-}
-
-.timeline-dot, .achievements-dot {
-  width: 16px;
-  height: 16px;
-  background: #ffe082;
-  border: 3px solid #f28b82;
-  border-radius: 50%;
-  position: absolute;
-  left: 22px;
-  top: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* Collapsible Buttons */
@@ -115,26 +94,35 @@ h1, h2, h3 {
   font-size: 1.1rem;
   transition: background 0.2s;
   margin-top: 0.5rem;
+  position: relative;
+}
+
+.collapsible::after {
+  content: '▼';
+  font-size: 0.8rem;
+  position: absolute;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.active-collapsible::after {
+  transform: rotate(-180deg);
 }
 
 .collapsible:hover {
   background: #ffe0e0;
 }
 
-.active-collapsible {
-  background-color: #ffe0e0;
-}
-
 .content-collapsible {
-  padding: 0.5rem 1rem;
-  display: none;
+  padding: 0 1rem;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.4s ease;
   background-color: #fff;
   border-left: 2px solid #f28b82;
   border-radius: 0 0 8px 8px;
-  width: 100%;
-  box-sizing: border-box;
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 /* Footer */
@@ -154,4 +142,11 @@ a.internal-link {
 
 a.internal-link:hover {
   color: #f28b82;
+}
+
+/* Loader */
+#page-loader {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #d84315;
 }
