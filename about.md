@@ -3,7 +3,7 @@ layout: default
 title: "About Me"
 permalink: /about/
 ---
-<div style="margin-left:12%; max-width:800px;" class="fade-in">
+<div style="margin-left:12%; max-width:900px;" class="fade-in">
   <h2>About Me</h2>
   <p>Hello! I'm <strong>Anuj Agarwal</strong>, a Generative AI & Machine Learning Leader with over 9 years of experience across <strong>Finance, Healthcare, and Cybersecurity</strong>. I love building AI solutions that solve real-world problems and scale across industries.</p>
 
