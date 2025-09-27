@@ -38,9 +38,6 @@ permalink: /contact/
   View Repos
 </a>
 
-</div>
-
-
 <p style="margin-top: 2rem; font-style: italic; text-align: center;">
   I’m always open to collaboration, mentorship, or interesting discussions about AI and machine learning!
 </p>
