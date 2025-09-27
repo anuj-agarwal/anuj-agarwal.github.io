@@ -30,14 +30,21 @@ permalink: /projects/
 </div>
 
 <div class="timeline-entry">
-  <div class="timeline-date">2022</div>
+  <div class="timeline-date">2023</div>
   <button class="collapsible">Healthcare Innovation</button><div class="content-collapsible">
-    <p>Patent-pending CT clustering algorithm optimizing imaging protocols. Integrated GANs for synthetic image generation and YOLO models for pathology detection.</p>
+    <p>Patent-pending CT clustering algorithm optimizing imaging protocols.</p>
   </div>
 </div>
 
 <div class="timeline-entry">
-  <div class="timeline-date">2018</div>
+  <div class="timeline-date">2022</div>
+  <button class="collapsible">Healthcare Innovation</button><div class="content-collapsible">
+    <p>Integrated GANs for synthetic image generation and YOLO models for pathology detection.</p>
+  </div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">2019</div>
   <button class="collapsible">Cybersecurity MDR System</button><div class="content-collapsible">
     <p>AI-powered Managed Detection & Response platform predicting advanced cyber threats. Multi-model framework ensures high accuracy and low false positives.</p>
   </div>
