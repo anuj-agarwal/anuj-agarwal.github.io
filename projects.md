@@ -31,14 +31,14 @@ permalink: /projects/
 
 <div class="timeline-entry">
   <div class="timeline-date">2023</div>
-  <button class="collapsible">Healthcare Innovation</button><div class="content-collapsible">
+  <button class="collapsible">Healthcare NLP Innovation</button><div class="content-collapsible">
     <p>Patent-pending CT clustering algorithm optimizing imaging protocols.</p>
   </div>
 </div>
 
 <div class="timeline-entry">
   <div class="timeline-date">2022</div>
-  <button class="collapsible">Healthcare Innovation</button><div class="content-collapsible">
+  <button class="collapsible">Healthcare Vision Innovation</button><div class="content-collapsible">
     <p>Integrated GANs for synthetic image generation and YOLO models for pathology detection.</p>
   </div>
 </div>
