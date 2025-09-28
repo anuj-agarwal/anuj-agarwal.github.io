@@ -17,5 +17,5 @@ permalink: /about/
   </ul>
 
   <p>Outside work, I enjoy exploring new AI tools, mentoring teams, and publishing research. I believe in continuous learning, collaboration, and delivering solutions that have meaningful impact.</p>
-  <p>Learn more about my  <a class="internal-link" href="/experience/">(Experience)</a>, <a class="internal-link" href="/skills/">Skills</a>, <a class="internal-link" href="/projects/">Projects</a>, and <a class="internal-link" href="/achievements/">Achievements</a>.</p>
+  <p>Learn more about my  <a class="internal-link" href="/experience/">Experience</a>, <a class="internal-link" href="/skills/">Skills</a>, <a class="internal-link" href="/projects/">Projects</a>, and <a class="internal-link" href="/achievements/">Achievements</a>.</p>
 </div>
